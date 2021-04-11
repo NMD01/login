@@ -1,0 +1,42 @@
+body{
+    background: rgb(102,95,111);
+    background: linear-gradient(90deg, rgba(102,95,111,1) 0%, rgba(63,56,72,1) 68%, rgba(22,18,28,1) 100%);
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+}
+.container{
+    background-color: #3f3848;
+    color: #fffff9;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    border-radius: 5px;
+    margin: auto;
+    margin-top: 25vh;
+    margin-bottom: 25vh;
+    box-shadow: 2px 2px 10px black;
+}
+.texto{
+    
+    margin-bottom: 50px;
+}
+.dados{
+    background-color: #3f3848;
+    color: #fffff9;
+    border: none;
+    border-bottom: 1px solid #fffff9;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 30px;
+
+}
+::placeholder{
+    color: #fffff9;
+    text-transform: uppercase;
+}
+.robo{
+    background-color: green;
+    
+    padding: 10px;
+}
