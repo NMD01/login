@@ -10,16 +10,20 @@ body{
     text-transform: uppercase;
     text-align: center;
     padding: 20px;
-    width: 500px;
     border-radius: 5px;
     margin: auto;
     margin-top: 25vh;
     margin-bottom: 25vh;
     box-shadow: 2px 2px 10px black;
+    max-width: 500px;
 }
 .texto{
-    
+    word-spacing: 3px;
     margin-bottom: 50px;
+    line-height: 25px;
+}
+a{
+    color: white;
 }
 .dados{
     background-color: #3f3848;
@@ -42,6 +46,7 @@ body{
     font-weight: bold;
     margin: auto;
     width: fit-content;
+    border: 2px solid rgb(17, 177, 142);
     
 }
 .robo input {
@@ -57,10 +62,77 @@ body{
     
 }
 
+.robo:hover{
+    background-color: rgb(15, 146, 118);
+}
+
 .robo input:hover{
     cursor: pointer;
+    
     
 }
 .label:hover{
     cursor: pointer;
+    
+}
+
+.botao{
+    text-transform: uppercase;
+    padding: 15px;
+    background-color: #f04227;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 2px 2px 10px black;
+    font-size: 16px;
+    border: 2px solid #f04227;
+}
+.botao:hover{
+    
+    cursor: pointer;
+    border: 2px solid #f04227;
+    background-color: #ce3922;
+}
+
+
+
+@media screen and  (max-width:340px){
+    h1{
+        font-size: 9vw;
+    }
+}
+
+@media screen and (max-width:270px){
+    .label{
+        /* background-color: red; */
+        padding: 0 0;
+
+    }
+    .dados{
+        font-size: 6vw;
+    }
+    .nSenha{
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:220px){
+    .robo{
+        padding: 5px;
+    }
+    .label{
+        font-size: 7vw;
+    }
+    .robo input{
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width:184px){
+    .robo input{
+        height: 15px;
+        width: 15px;
+    }
 }
