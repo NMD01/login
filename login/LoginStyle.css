@@ -1,7 +1,10 @@
 body{
     background: rgb(102,95,111);
     background: linear-gradient(90deg, rgba(102,95,111,1) 0%, rgba(63,56,72,1) 68%, rgba(22,18,28,1) 100%);
-    
+    margin: 0;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    padding: 0;
 }
 
 
