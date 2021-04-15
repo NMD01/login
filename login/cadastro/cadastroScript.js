@@ -3,6 +3,8 @@ let email = document.getElementById("email")
 let senha1 = document.getElementById("senha1")
 let senha2 = document.getElementById("senha2")
 let botao = document.getElementById("botao")
+let checkbox = document.getElementById("robo")
+
 
 
 let container = document.getElementById("container")
@@ -25,18 +27,24 @@ if(nome.value.lentgh == 0 || email.value.length == 0 || senha1.value.length == 0
     alert("[ERRO] Verifique a senha, e tente novamente")
 }else if(senha1.value.length < 6){
     alert("Digite uma senha com pelo menos 6 dígitos")
-}else{
-    
+}else if(checkbox.checked){     
+   
     container.removeChild(form)
     container.appendChild(h1)
     h1.innerHTML = "inscrição realizada com sucesso"
-
     container.appendChild(login)
     login.innerHTML = "FAZER LOGIN"
-
     alert("Abra o console")
-    console.log("apenas uma simulação usando javaScript a inscrição não foi salva")
-}
+    console.log("apenas uma simulação usando javaScript a inscrição foi salva apenas no LocalStorage") 
+    console.log("Pode fazer login agora!")
+
+    localStorage.setItem("nome",nome.value)
+    localStorage.setItem("emailParaLoginTeste",email.value)
+    localStorage.setItem("senhaParaLoginTeste",senha1.value)
+
+    }else{     
+    alert("Verifique se não é um robo")
+    }
 
 
 
